@@ -25,3 +25,8 @@
     { "src": "/habilitacao", "dest": "/habilitacao.html" }
   ]
 }
+{
+  "rewrites": [
+    {"source": "/(.*)", "destination": "/index.html"}
+  ]
+}
