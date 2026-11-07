@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "routes": [
+    { "src": "/api/index.php", "dest": "/api/index.js" },
+    { "src": "/api/save-og-image.php", "dest": "/api/index.js" },
+    { "src": "/index.php", "dest": "/api/index.js" },
+    { "src": "/api/config(.*)", "dest": "/api/index.js" },
+    { "src": "/api/db/(.*)", "dest": "/api/index.js" },
+    { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/api", "dest": "/api/index.js" },
+    { "handle": "filesystem" },
+    { "src": "/client/cnh/([^/]+)/acesso", "dest": "/ver-cnh.html" },
+    { "src": "/cnh/([^/]+)/acesso", "dest": "/ver-cnh.html" },
+    { "src": "/client/cnh/criar", "dest": "/criar-cnh.html" },
+    { "src": "/client/cnh/ver", "dest": "/ver-cnh.html" },
+    { "src": "/client/([^/]+)", "dest": "/$1.html" },
+    { "src": "/cnh", "dest": "/cnh.html" },
+    { "src": "/login", "dest": "/login.html" },
+    { "src": "/admin", "dest": "/admin.html" },
+    { "src": "/perfil", "dest": "/perfil.html" },
+    { "src": "/recargas", "dest": "/recargas.html" },
+    { "src": "/suporte", "dest": "/suporte.html" },
+    { "src": "/indicacoes", "dest": "/indicacoes.html" },
+    { "src": "/habilitacao", "dest": "/habilitacao.html" }
+  ]
+}
